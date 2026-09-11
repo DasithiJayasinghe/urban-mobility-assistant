@@ -1,11 +1,16 @@
 # Secrets and local environment
 .streamlit/secrets.toml
 .env
+.venv/
+venv/
 
-# Python cache and Jupyter checkpoints
+# Python cache, builds, and Jupyter checkpoints
 __pycache__/
 .ipynb_checkpoints/
 *.py[cod]
+*.egg-info/
+build/
+dist/
 
 # Large local source data (configured through TAXI_PARQUET_PATH when deployed)
 *.parquet
